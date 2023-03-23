@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-family: sans-serif;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gameInfo h1{
+    font-size: 2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(38, 215, 242);
+    cursor: pointer;
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family: Georgia, serif;
+}
+
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+/* .gameInfo h1{
+    font-size: 3vw;
+} */
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background-color: rgb(11, 238, 41);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.info{
+    font-size: 25px;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
